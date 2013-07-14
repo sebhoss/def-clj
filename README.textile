@@ -1,0 +1,47 @@
+h1. def-clj "!https://travis-ci.org/sebhoss/def-clj.png!":https://travis-ci.org/sebhoss/def-clj "!https://www.ohloh.net/p/def-clj/widgets/project_thin_badge.gif!":https://www.ohloh.net/p/def-clj/
+
+p. Clojure helper functions for function definitions.
+
+h2. Usage
+
+p. The namespace @com.github.sebhoss.def@ offers the following functions:
+
+* @(defnk name decls)@ Defines a keyword-based function
+* @(defn* name decls)@ Defines both Clojure and Java functions (using the standard prefix _-_). Usefull for Java interoperability.
+
+
+h2. Example
+
+h3. defnk
+
+bc.. (require '[com.github.sebhoss.bootstrap.def :refer :all])
+
+(defnk my-func [:key1 :key2 :key3] ...)
+
+h3. defn*
+
+bc.. (require '[com.github.sebhoss.bootstrap.def :refer :all])
+
+(defn* my-func [params] ...)
+
+
+h2. Integration
+
+h3. Maven
+
+bc. <dependencies>
+  <dependency>
+    <groupId>com.github.sebhoss</groupId>
+    <artifactId>def-clj</artifactId>
+    <version>[1.0.0,2.0.0)</version>
+  </dependency>
+</dependencies>
+
+h3. Leiningen
+
+bc. [com.github.sebhoss/def-clj "[1.0.0,2.0.0)"]
+
+
+h2. License
+
+p. This program is free software. It comes without any warranty, to the extent permitted by applicable law. You can redistribute it and/or modify it under the terms of the Do What The Fuck You Want To Public License, Version 2, as published by Sam Hocevar. See "http://www.wtfpl.net/":http://www.wtfpl.net/ for more details.
