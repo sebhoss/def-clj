@@ -14,15 +14,17 @@ h2. Example
 
 h3. defnk
 
-bc.. (require '[com.github.sebhoss.bootstrap.def :refer :all])
+bc.. (require '[com.github.sebhoss.def :refer :all])
 
 (defnk my-func [:key1 :key2 :key3] ...)
+; expandes to: (defn my-func [& {:keys [key1 key2 key3]}] ...)
 
 h3. defn*
 
-bc.. (require '[com.github.sebhoss.bootstrap.def :refer :all])
+bc.. (require '[com.github.sebhoss.def :refer :all])
 
 (defn* my-func [params] ...)
+; expandes to (defn my-func [params] ...) and (defn -my-func [params] ...)
 
 
 h2. Integration
