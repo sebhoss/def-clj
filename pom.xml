@@ -13,7 +13,7 @@
 
   <groupId>com.github.sebhoss</groupId>
   <artifactId>def-clj</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.1-SNAPSHOT</version>
   <packaging>clojure</packaging>
   <name>def-clj</name>
   <description>Clojure macros for function definitions.</description>
