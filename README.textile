@@ -24,7 +24,7 @@ h3. defn*
 bc.. (require '[com.github.sebhoss.def :refer :all])
 
 (defn* my-func [params] ...)
-; expandes to (defn my-func [params] ...) and (defn -my-func [params] ...)
+; expandes to (defn my-func [params] ...) and (defn -myFunc [params] ...)
 
 
 h2. Integration
